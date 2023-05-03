@@ -7,20 +7,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/app.css" />
-  <title>Thiago'sMovies</title>
+  <title>Em'sMovies</title>
 </head>
 <body>
-  <header id="header" class="header-container">
-    <span class="header-arrow inactive">&lt;</span>
-    <img class="icon icon-menu" src="./assets/menu-hamburguesa.svg" alt="">
-    <h1 class="header-title">Thiago'sMovies</h1>
-    <h1 class="header-title header-title--categoryView inactive">Acción</h1>
-    <form id="searchForm" class="header-searchForm">
-    <input type="text" placeholder="Buscar" />
-    <button><img class="icon icon-search" src="./assets/busqueda.svg" alt=""></button>
-    </form>
-  </header>
 
+    <header id="header" class="header-container">
+      <span class="header-arrow inactive">&lt;</span>
+      <h1 class="header-title">Em'sMovies</h1>
+      <h1 class="header-title header-title--categoryView inactive">Acción</h1>
+      <form id="searchForm" class="header-searchForm">
+      <input type="text" placeholder="Buscar" />
+      <button><img class="icon icon-search" src="./assets/busqueda.svg" alt=""></button>
+      </form>
+    </header>
+  
     <section id="trendingPreview" class="trendingPreview-container">
 
       <div class="trendingPreview-header">
@@ -39,6 +39,8 @@
       </article>
 
     </section>
+
+
 
     <section id="categoriesPreview" class="categoriesPreview-container">
       <h2 class="categoriesPreview-title">Categorías</h2>
@@ -116,7 +118,13 @@
   </div>
   </article>
   </section>
-  <footer>Hecho con amor en Platzi por @Thiago_Almarazz</footer>
+  <footer>
+    <div class="footer-container">
+      By @Thiago_Almarazz
+      <p>Todos los derechos reservados ©</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script src="./src/main.js"></script>
 </body>
 </html>

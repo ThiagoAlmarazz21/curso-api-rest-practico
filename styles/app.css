@@ -4,7 +4,7 @@
 
 :root {
   --purple-light-1: #fafafb;
-  --purple-light-2: #eaecf2;
+  --purple-light-2: rgb(240, 240, 240);
   --purple-medium-1: #83acc8;
   --purple-medium-2: #4889bf;
   --purple-medium-3: #215b8a;
@@ -32,7 +32,7 @@ html {
 
 body {
   /* background-color: var(--purple-light-1); */
-  background-color: rgb(15, 15, 15);
+  background-color: #0A0A0A;
   color: var(--purple-dark-2);
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text1);
@@ -57,7 +57,7 @@ h1, h2 {
 
 h2 {
   font-size: 18px;
-  color: var(--purple-dark-1);
+  color: rgb(240, 240, 240);
   font-weight: var(--font-weight-title2);
 }
 
@@ -148,6 +148,7 @@ button {
 } 
 
 .header-title {
+  color: rgb(240, 240, 240);
   margin-bottom: 16px;
 }
 
@@ -227,7 +228,9 @@ button {
 }
 
 .category-title {
-  margin-bottom: 8px;
+  display: flex;
+
+  margin-bottom: 14px;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
@@ -323,14 +326,19 @@ button {
 /* Footer */
 footer {
   background-color: var(--purple-medium-3);
-  color: var(--purple-light-2);
-  text-align: center;
+  width: 100%;
   height: 48px;
+
+}
+.footer-container {
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--purple-light-2);
 }
-
 
 /* Navigation */
 .inactive {
