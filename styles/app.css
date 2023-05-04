@@ -93,6 +93,8 @@ button {
 
 #searchBtn:hover {  
   background-color: var(--purple-medium-2);
+}#searchBtn:active {  
+  background-color: var(--purple-medium-2);
 }
 
 
@@ -261,6 +263,9 @@ button {
   text-overflow: ellipsis;
 }
 .category-title:hover {
+  color: var(--purple-light-2);
+  text-decoration:underline;
+}.category-title:active {
   color: var(--purple-light-2);
   text-decoration:underline;
 }
