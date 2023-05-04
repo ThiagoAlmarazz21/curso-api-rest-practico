@@ -87,6 +87,14 @@ button {
   cursor: pointer;
 }
 
+#searchBtn {
+  transition: all 150ms ease-in;
+}
+
+#searchBtn:hover {  
+  background-color: var(--purple-medium-2);
+}
+
 
 /* Shared */
 .header-container, .trendingPreview-header, .categoriesPreview-container {
@@ -114,15 +122,25 @@ button {
 }
 
 .movie-img {
+  transition: all 150ms ease-in;
   border-radius: 8px;
 }
+.movie-img:hover {
+  transform: scale(1.05);
+}
 
-.categoriesPreview-list, .categories-list {
+
+.categoriesPreview-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
+}
+.categories-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -132,9 +150,10 @@ button {
 }
 
 .header-container--long {
-  background-image: url('https://pics.filmaffinity.com/Deadpool-777527803-large.jpg');
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(https://pics.filmaffinity.com/Deadpool-777527803-large.jpg);
+  background-image: url('../assets/scale.jpeg');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(../assets/scale.jpeg);
   background-size: cover !important;
+  background-position: center center;
   height: 480px;
   position: fixed;
   top: 0;
@@ -191,9 +210,16 @@ button {
 }
 
 .trendingPreview-btn {
+  border: 2px solid var(--purple-dark-1);
+  background-color: transparent;
+  transition: all 150ms ease-in;
   border-radius: 8px;
   height: 32px;
   width: 72px;
+}
+.trendingPreview-btn:hover {
+  background-color: var(--purple-dark-2);
+  border: 2px solid transparent;
 }
 
 .trendingPreview-movieList {
@@ -207,7 +233,7 @@ button {
 
 .trendingPreview-movieList .movie-container {
   display: inline-block;
-  margin-right: 10px;
+  margin-right:16px;
 }
 
 .trendingPreview-movieList .movie-container .movie-img {
@@ -226,13 +252,17 @@ button {
 }
 
 .category-title {
+  transition: all 150ms ease-in;
   display: flex;
-
   margin-bottom: 14px;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.category-title:hover {
+  color: var(--purple-light-2);
+  text-decoration:underline;
 }
 
 /* Generic List (search, trending & category) */
@@ -262,10 +292,11 @@ button {
   margin-top: 403px;
   z-index: 1;
   position: absolute;
-  background-color: var(--purple-light-1);
+  background-color: #0A0A0A;
 }
 
 .movieDetail-title {
+  color: var(--purple-light-2);
   display: inline-block;
   width: 80%;
   margin: 0 0 16px 0;
@@ -285,7 +316,9 @@ button {
 }
 
 .movieDetail-description {
+  color: var(--purple-light-2);
   margin: 0 0 24px 0;
+  border-top: 1px solid white;
 }
 
 .relatedMovies-container {
@@ -353,8 +386,8 @@ footer {
 }
 
 .icon-redes {
+  transition: all 150ms ease-in;
   margin-top: 20px;
-  transition: all 200ms ease-in;
   width: 30px;
 }
 .icon-redes:hover {

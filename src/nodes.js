@@ -6,6 +6,7 @@ const trendingPreviewSection = $('#trendingPreview');
 const categoriesPreviewSection = $('#categoriesPreview');
 const genericSection = $('#genericList');
 const movieDetailSection = $('#movieDetail');
+const footerSection = $('#footer');
 
 // List y Containers 
 const searchForm = $('#searchForm')
