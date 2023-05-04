@@ -5,6 +5,8 @@
 }
 
 :root {
+  --scrollbar: #d8d8d8d0;
+  --scrollbar-hover: #fafafa6c;
   --purple-light-1: #fafafb;
   --purple-light-2: rgb(240, 240, 240);
   --purple-medium-1: #83acc8;
@@ -37,6 +39,17 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+  background-color: var(--purple-light-1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--purple-dark-2);
+  border-radius: 10px;
 }
 
 h1, h2, h3 {
@@ -110,6 +123,23 @@ button {
 .trendingPreview-header, .categoriesPreview-title {
   margin-bottom: 24px;
 }
+
+.trendingPreview-movieList::-webkit-scrollbar {
+  height: 7px;
+  transition: all 150ms;
+}
+.trendingPreview-movieList::-webkit-scrollbar-thumb {
+  transition: all 150ms;
+
+  background: var(--scrollbar);
+  border-radius: 5px;
+}
+.trendingPreview-movieList::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-hover);
+  transition: all 150ms;
+  border-radius: 5px;
+}
+
 
 .movie-container {
   cursor: pointer;
