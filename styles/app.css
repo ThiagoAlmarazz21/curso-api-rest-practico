@@ -448,3 +448,29 @@ footer p {
 .inactive {
   display: none;
 }
+
+@media (min-width: 700px) {
+  #header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header-searchForm{
+    max-width: 400px;
+  }
+
+  .categoriesPreview-list {
+
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
