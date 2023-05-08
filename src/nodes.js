@@ -1,8 +1,5 @@
 const $ = (id) => document.querySelector(id);
 
-// BODY
-const body = $('.bodySection');
-
 // Sections 
 const headerSection = $('#header');
 const trendingPreviewSection = $('#trendingPreview');

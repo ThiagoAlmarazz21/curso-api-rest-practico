@@ -215,6 +215,7 @@ button {
 
 
 .categoriesPreview-list {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -341,6 +342,11 @@ button {
 /* Categories ---------------------------------------------------------------------------*/
 .category-container {
   width: 45%;
+}
+.category-container-preview--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .category-container--loading {
   display: flex;
