@@ -85,9 +85,9 @@ h3 {
 }
 
 input {
-  background-color: var(--purple-light-2);
-  color: var(--purple-medium-2);
-  border: none;
+  background-color: transparent;
+  border: 2px solid var(--purple-dark-1);
+  color: var(--purple-light-2);
   font-size: 18px;
   padding-left: 16px;
 }
@@ -151,6 +151,38 @@ button {
   cursor: pointer;
   background-image:(url('../assets/scale.jpeg'));
 }
+
+.movie-container--loading {
+  background-color: rgba(240, 240, 240, 0.589);
+  border-radius: 8px;
+  height: 225px;
+  min-height: 225px;
+  max-height: 225px;
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  margin-bottom: 15px;
+  animation: loading infinite 2s;
+}
+.movie-container--loading:nth-child(2) {
+  animation-delay: .2s;
+}
+.movie-container--loading:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes loading {
+  0%, 100% {
+    opacity: 100%;
+  }
+  10% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+
 #hardcore {
   width: 100%;
   height: 100%;
@@ -171,11 +203,11 @@ button {
 }
 
 .movie-img {
-  width: 250px;
-
+  width: 100%;
   margin-right: 10px;
   transition: all 150ms ease-in;
   border-radius: 8px;
+  animation: loading;
 }
 .movie-img:hover {
   transform: scale(1.05);
@@ -310,6 +342,28 @@ button {
 .category-container {
   width: 45%;
 }
+.category-container--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: category-animation infinite 2s;
+}
+.loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid var(--purple-dark-2);
+  border-top-color: transparent;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .category-title {
   transition: all 150ms ease-in;
@@ -345,29 +399,6 @@ button {
 
 .genericList-container .movie-img {
   width: 100%;
-}
-
-/* RECOMENDADOS-------------------------------------------------------------------------*/
-.recomendedMovies-container {
-  margin-top: 48px;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.recomendedMovies-movieList { 
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-.recomendedMovies-movieList .movie-container {
-  height: 225px;
-
-  width: 150px;
-}
-.recomendedMovies-container .movie-container .movie-img img {
-  width: 100%;
-  height: 100%;
 }
 
 /* Movie Detail--------------------------------------------------------------------------- */

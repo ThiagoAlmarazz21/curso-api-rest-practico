@@ -23,9 +23,6 @@ function navigator() {
 };
 
 function homePage(id) {
-  console.log('HOME!!');
-
-
   headerSection.classList.remove('header-container--long')
   arrowBtn.classList.add('inactive');
   arrowBtn.classList.remove('header-arrow--white');
@@ -44,8 +41,6 @@ function homePage(id) {
 }
 
 function categoriesPage() {
-  console.log('CATEGORY!!');
-
   // const top = window.screenTop(0, 0);
 
   headerSection.classList.remove('header-container--long')
@@ -89,8 +84,6 @@ function movieDetailsPage() {
 
   const [_, movieId] = location.hash.split('=');
   getMovieById(movieId);
-
-  console.log('MOVIES!!');
 }
 
 function searchPage() {
@@ -112,11 +105,9 @@ function searchPage() {
   // ['#search', 'buscado']
   const [_, query] = location.hash.split('=');
   getMoviesBySearch(query);
-
-  console.log('SEARCH!!');
 }
 
-function trendsPage() {
+function trendsPage() { 
 
   headerSection.classList.remove('header-container--long')
   headerSection.style.background = '';
@@ -135,7 +126,5 @@ function trendsPage() {
   headerCategoryTitle.innerHTML = 'Tendencias'
 
   getTrendingMovies();
-
-  console.log('TRENDS!!');
 }
 
