@@ -31,6 +31,7 @@
         <button class="trendingPreview-btn">Ver más</button>
       </div>
 
+      <img class="control prev" src="./assets/angulo-izquierdo.svg" alt="">
       <article class="trendingPreview-movieList">
           <div class="movie-container movie-container--loading"></div>
           <div class="movie-container movie-container--loading"></div>
@@ -41,7 +42,8 @@
                     alt="Nombre de la película"
                   /> -->
           </div>
-      </article>
+        </article>
+        <img class="control next" src="./assets/angulo-derecho.svg" alt="">
 
     </section>
 
@@ -56,13 +58,39 @@
       </article>
     </section>
 
-    <section id="genericList" class="genericList-container inactive">
+    <section id="liked" class="liked-container">
+      <div class="liked-header">
+        <h2 class="liked-title">Películas favoritas</h2>
+      </div>
+
+      <article class="liked-movieList">
+        <div class="movie-container movie-container--loading">
+          <!-- <img
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img"
+                    alt="Nombre de la película"
+                  /> -->
+          </div>
+
+        <div class="movie-container">
+          <img
+                    src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                    class="movie-img"
+                    alt="Nombre de la película"
+                  />
+          </div>
+      </article>
+      
+    </section>
+
+    <section id="genericList" class="genericList-container inactive" >
 
       <div class="movie-container movie-container--loading">
       </div>
 
       <div class="movie-container movie-container--loading">
       </div>
+      
 
       <div class="movie-container movie-container--loading">
         <!-- <img src="https://image.tmdb.org/t/p/w300/ad0zdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img" alt="nombre de la pelicula"> -->
