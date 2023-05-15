@@ -419,8 +419,8 @@ select {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
@@ -753,4 +753,8 @@ footer p {
   .movieDetail-title {
     color: var(--purple-dark-2);
   }
+  .trendingPreview-container .control{
+  width: 50px;
+  height: 50px; 
+}
 }
