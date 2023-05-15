@@ -495,7 +495,7 @@ select {
 
 /* Generic List (search, trending & category) ---------------------------------------*/
 .genericList-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -695,6 +695,16 @@ footer p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+  }
+  .genericList-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px 24px;
+    gap: 13px;
   }
   .genericList-container .movie-img {
     width: 150px;
